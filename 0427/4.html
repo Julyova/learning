@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Transforms</title>
+        
+        <style>
+            div {
+                width: 400px;
+                height: 400px;
+                margin: 200px;
+                border: 1px solid black;
+                font-size: 30px;
+                position: absolute;
+            }
+            .trans {
+                background-color: pink;
+                background-size: cover;
+                color: red;
+                opacity: .8;
+                /*transition: all 10s ease;*/
+                /*transition: all 10s linear;*/
+                transition: all 10s steps(11);
+            }
+            .raw {
+                background-color: lightblue;
+                background-size: cover;
+                color: blue;
+                opacity: .2;
+            }
+            body:hover .trans {
+                width: 800px;
+                height: 100px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="raw">123456</div>
+        <div class="trans">QWERTY</div>
+    </body>
+</html>
